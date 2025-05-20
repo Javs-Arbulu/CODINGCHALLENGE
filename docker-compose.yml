@@ -6,6 +6,4 @@ services:
     ports:
       - '3001:3001'
       - '3002:3002'
-    volumes:
-      - ./:/usr/src/app
     command: sh -c "nodemon app.js & nodemon app-stats.js"
