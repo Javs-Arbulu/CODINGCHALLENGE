@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Frontend Matriz y Estadísticas</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <h1>Enviar matriz para rotar y obtener estadísticas</h1>
+
+        <label for="matrixInput"
+            >Matriz (formato JSON, ejemplo: [[1,2],[3,4]]):</label
+        ><br />
+        <textarea id="matrixInput">[[1,2,3],[4,5,6],[7,8,9]]</textarea><br />
+
+        <label for="tokenInput">JWT Token:</label><br />
+        <input
+            type="text"
+            id="tokenInput"
+            style="width: 400px"
+            placeholder="Coloca aquí tu token JWT"
+        /><br /><br />
+
+        <button id="sendBtn">Enviar Matriz</button>
+
+        <div class="output">
+            <div>
+                <h2>Matriz Rotada</h2>
+                <pre id="rotatedMatrixOutput">-</pre>
+            </div>
+
+            <div>
+                <h2>Matriz Q</h2>
+                <pre id="rotatedQOutput">-</pre>
+            </div>
+
+            <div>
+                <h2>Matriz R</h2>
+                <pre id="rotatedROutput">-</pre>
+            </div>
+
+            <div>
+                <h2>Estadísticas</h2>
+                <pre id="statsOutput">-</pre>
+            </div>
+        </div>
+
+        <script src="script/matrixScript.js"></script>
+    </body>
+</html>
